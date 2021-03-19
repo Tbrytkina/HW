@@ -18,16 +18,15 @@ public class Task6 {
         for (int i = 0; i < arr.length; i++) {
             for (int j = 0; j < arr[i].length; j++) {
 
-                if (i % 2 == 0) {
-                    System.out.print(0);
-                } else
-                    System.out.print(1);
-                if (j % 2 == 0) {
-                    System.out.print(0);
-                } else
-                    System.out.println(1);
-            }
+                if (arr[i][j] % 2 == 0) {
+                    arr[i][j] = 0;
+                } else {
+                    arr[i][j] = 1;
+                }
+
+            System.out.print(arr[i][j]);
         }
-        System.out.println();
+            System.out.println();
     }
+}
 }
