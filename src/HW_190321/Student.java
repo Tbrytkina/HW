@@ -1,27 +1,16 @@
 package HW_190321;
 
-import java.util.Scanner;
-
 public class Student {
     private String name;
     private String surname;
     private int course;
-    static Scanner scanner = new Scanner(System.in);
 
-    public static void main(String[] args) {
-        System.out.println("Введите номер курса");
-        }
 
-    public Student(String name, String surname, int course) {
+    public Student(int course, String name, String surname) {
         this.name = name;
         this.surname = surname;
-        if (!(course<=0) && !(course>=5)){
-            this.course = course;
-        }else{
-            System.out.println("Incorrect course");
-        }
+        this.course = course;
     }
-
 
     public String getName() {
         return name;
@@ -44,8 +33,10 @@ public class Student {
     }
 
     public void setCourse(int course) {
-        this.course = course;
+        if (!(course <= 0) && !(course >= 5)) {
+            this.course = course;
+        } else {
+            System.out.println("Incorrect course");
+        }
     }
-
-
-    }
+}

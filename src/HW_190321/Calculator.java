@@ -56,7 +56,7 @@ public class Calculator {
                 result = n1/n2;
                 break;
             default:
-                System.out.println("Математическое действие или число введено неверно");
+                System.out.println("Математическое действие неверно");
                 result = answer(n1, n2, getSymbol());
     }
         return result;
