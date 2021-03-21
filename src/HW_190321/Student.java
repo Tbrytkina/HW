@@ -1,10 +1,16 @@
 package HW_190321;
 
+import java.util.Scanner;
+
 public class Student {
     private String name;
     private String surname;
     private int course;
+    static Scanner scanner = new Scanner(System.in);
 
+    public static void main(String[] args) {
+        System.out.println("Введите номер курса");
+        }
 
     public Student(String name, String surname, int course) {
         this.name = name;
