@@ -8,7 +8,8 @@ import java.util.Scanner;
 public class Student_Data {
     public static void main(String[] args) {
 
-        List<Student> list = new ArrayList<Student>();
+        List<Student> list = new ArrayList<Student>(); // класс динамических массивов, который может наращиваться по мере
+        // надобности - класс ArrayList представляет собой списочный массив объектных ссылок переменной длины.
 
         list.add(new Student(2, "Alex", "Aleksandrov"));
         list.add(new Student(1, "Max", "levin"));
@@ -33,13 +34,13 @@ public class Student_Data {
             System.out.println("Вы ввели неправильный курс");
 
         }
-
         System.out.println("На курсе(" + course + ") учатся следующие студенты:");
-        for (Iterator iterator = name.iterator();
-             iterator.hasNext(); ) {
+        for (Iterator iterator = name.iterator();// iterator - возврашает объект реализующий интерфейс
+             iterator.hasNext(); ) { // has.next - проверка, есть ли следующий элемент и не достигнут ли конец
+            // коллекции
             Student loadedStudent = (Student) iterator.next();
             if (loadedStudent.getCourse() == course)
-                System.out.println(loadedStudent.getName() +" " + loadedStudent.getSurname());
+                System.out.println(loadedStudent.getName() + " " + loadedStudent.getSurname());
             }
         }
     }
