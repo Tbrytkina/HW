@@ -1,7 +1,7 @@
 package HW_020421.iHand;
 
-public class SonyHand implements iHand{
-    private int price = 25;
+public class SonyHand implements IHand {
+    private int price;
 
     public SonyHand(int price) {
         this.price = price;

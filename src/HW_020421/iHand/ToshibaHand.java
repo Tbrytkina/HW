@@ -1,7 +1,7 @@
 package HW_020421.iHand;
 
-public class ToshibaHand implements iHand{
-    private int price = 35;
+public class ToshibaHand implements IHand {
+    private int price;
 
     public ToshibaHand(int price) {
         this.price = price;

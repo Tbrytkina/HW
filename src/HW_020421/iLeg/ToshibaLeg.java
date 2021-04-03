@@ -1,7 +1,7 @@
 package HW_020421.iLeg;
 
 public class ToshibaLeg implements iLeg{
-    private int price =40;
+    private int price;
 
     public ToshibaLeg(int price) {
         this.price = price;

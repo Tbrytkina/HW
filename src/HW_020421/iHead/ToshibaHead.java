@@ -1,7 +1,7 @@
 package HW_020421.iHead;
 
-public class ToshibaHead implements iHead{
-    private int price = 15;
+public class ToshibaHead implements IHead {
+    private int price;
 
     public ToshibaHead(int price) {
         this.price = price;

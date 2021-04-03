@@ -1,7 +1,7 @@
 package HW_020421.iHead;
 
-public class SamsungHead implements iHead{
-    private int price = 20;
+public class SamsungHead implements IHead {
+    private int price;
 
     public SamsungHead(int price) {
         this.price = price;

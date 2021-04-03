@@ -1,6 +1,6 @@
 package HW_020421;
 
-public interface iRobot {
+public interface IRobot {
     void action();
     int getPrice();
 }

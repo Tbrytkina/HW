@@ -1,7 +1,7 @@
 package HW_020421.iHead;
 
-public class SonyHead implements iHead {
-    private int price = 10;
+public class SonyHead implements IHead {
+    private int price;
 
     public SonyHead(int price) {
         this.price = price;

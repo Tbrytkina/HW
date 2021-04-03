@@ -1,7 +1,7 @@
 package HW_020421.iHand;
 
-public class SamsungHand implements iHand{
-    private int price = 15;
+public class SamsungHand implements IHand {
+    private int price;
 
     public SamsungHand(int price) {
         this.price = price;

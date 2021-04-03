@@ -1,7 +1,7 @@
 package HW_020421.iLeg;
 
 public class SonyLeg implements iLeg{
-    private int price = 35;
+    private int price;
 
     public SonyLeg(int price) {
         this.price = price;

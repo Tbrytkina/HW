@@ -1,7 +1,7 @@
 package HW_020421.iLeg;
 
 public class SamsungLeg implements iLeg{
-    private int price = 30;
+    private int price;
 
     public SamsungLeg(int price) {
         this.price = price;
