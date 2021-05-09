@@ -8,17 +8,16 @@ public class Shop {
     /*добавить товар (принимает в качестве параметра объект товара и добавляет его в список товаров магазина).
     При попытке добавить товар с уже существующим id в списке, вставка производится не должна.
     */
-
-    public void addProduct(Products product) throws ProductException {
-        if (!listOfProduct.contains(product)) {
-            this.listOfProduct.add(product);
+    public void addProduct(Products p) throws ProductException {
+        if (!listOfProduct.contains(p)){
+            this.listOfProduct.add(p);
         } else {
-            throw new ProductException("Product " + product.getName() + " ProductId = " + product.getProductId() +
-                    " Price = " + product.getPrice() + " with this id already exists!");
+            throw new ProductException("Product " + p.getName() + " ProductId = " + p.getProductId() +
+                    " Price = " + p.getPrice() + " with this id already exists!");
         }
     }
     /*получить все товары (метод возвращает список всех товаров в магазине)*/
-    public ArrayList<Products> listOfProducts() throws ProductException {
+    public ArrayList<Products> getListOfProduct() throws ProductException {
         if (listOfProduct.size() > 0) {
             return listOfProduct;
         } else {
@@ -26,7 +25,6 @@ public class Shop {
         }
     }
     //удалить товар (метод принимает в качестве параметра id товара и удаляет из списка товар с соответствующим id)
-
     public void removeProduct(int productId) {
         listOfProduct.removeIf(products -> products.getProductId() == productId);
     }
